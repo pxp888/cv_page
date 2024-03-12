@@ -1,0 +1,34 @@
+.boxes {
+	background-color: #444444;
+	color: white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.headbox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	height: 60px;
+}
+
+.headbox > p {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.footbox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	align-items: center;
+	padding: 0 20px;
+	height: 60px;
+}
+
+@media print {
+	.boxes {
+		display: none;
+	}
+}
