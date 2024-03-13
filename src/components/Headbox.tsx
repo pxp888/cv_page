@@ -20,21 +20,23 @@ function Headbox({current, changeCurrent}: HeadboxProps) {
 				<p className="titlename" onClick={cvClick}>
 					Paul Xavier Perrine
 				</p>
-				<p
+				<a
 					onClick={cvClick}
 					className={current === 0 ? "currentpage" : ""}
+					href="#"
 				>
 					CV
-				</p>
+				</a>
 				<a href={cv} download>
 					PDF
 				</a>
-				<p
+				<a
 					onClick={contactClick}
 					className={current === 1 ? "currentpage" : ""}
+					href="#"
 				>
 					Contact
-				</p>
+				</a>
 			</div>
 		</>
 	);
