@@ -16,12 +16,21 @@ function Headbox({current, changeCurrent}: HeadboxProps) {
 	return (
 		<>
 			<div className="headbox boxes">
-				<p className="titlename">Paul Xavier Perrine</p>
-				{current === 0 ? (
-					<p onClick={contactClick}>Contact</p>
-				) : (
-					<p onClick={cvClick}>CV</p>
-				)}
+				<p className="titlename" onClick={cvClick}>
+					Paul Xavier Perrine
+				</p>
+				<p
+					onClick={cvClick}
+					className={current === 0 ? "currentpage" : ""}
+				>
+					CV
+				</p>
+				<p
+					onClick={contactClick}
+					className={current === 1 ? "currentpage" : ""}
+				>
+					Contact
+				</p>
 				<p>Download</p>
 			</div>
 		</>

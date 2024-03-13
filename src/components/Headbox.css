@@ -7,7 +7,7 @@
 .headbox {
 	height: 60px;
 	display: grid;
-	grid-template-columns: 7fr 1fr 1fr;
+	grid-template-columns: 7fr 1fr 1fr 1fr;
 	align-items: center;
 	justify-items: left;
 }
@@ -16,6 +16,7 @@
 	font-size: 24px;
 	font-weight: 700;
 	margin-left: 2rem;
+	color: white;
 }
 
 .headbox > p {
@@ -23,6 +24,16 @@
 	font-weight: 700;
 	margin: 0 1rem;
 	cursor: pointer;
+	color: rgb(148, 148, 148);
+	transition: color 0.3s;
+}
+
+.headbox > p:hover {
+	color: white;
+}
+
+.headbox .currentpage {
+	color: white;
 }
 
 .footbox {
@@ -38,5 +49,21 @@
 @media print {
 	.boxes {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.headbox {
+		grid-template-columns: 2fr 1fr 1fr 1fr;
+	}
+	.headbox .titlename {
+		font-size: 1rem;
+		margin-left: 1rem;
+	}
+	.headbox > p {
+		font-size: 16px;
+	}
+	.footbox {
+		padding: 0 10px;
 	}
 }
