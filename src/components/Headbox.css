@@ -19,16 +19,19 @@
 	color: white;
 }
 
-.headbox > p {
+.headbox > p,
+.headbox > a {
 	font-size: 18px;
 	font-weight: 700;
 	margin: 0 1rem;
 	cursor: pointer;
 	color: rgb(148, 148, 148);
 	transition: color 0.3s;
+	text-decoration: none;
 }
 
-.headbox > p:hover {
+.headbox > p:hover,
+.headbox > a:hover {
 	color: white;
 }
 

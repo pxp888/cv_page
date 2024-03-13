@@ -1,4 +1,5 @@
 import "./Headbox.css";
+import cv from "../assets/paul_xavier_perrine_cv.pdf";
 
 interface HeadboxProps {
 	current: number;
@@ -31,7 +32,9 @@ function Headbox({current, changeCurrent}: HeadboxProps) {
 				>
 					Contact
 				</p>
-				<p>Download</p>
+				<a href={cv} download>
+					Download
+				</a>
 			</div>
 		</>
 	);
