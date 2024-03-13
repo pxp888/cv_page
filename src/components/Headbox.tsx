@@ -26,15 +26,15 @@ function Headbox({current, changeCurrent}: HeadboxProps) {
 				>
 					CV
 				</p>
+				<a href={cv} download>
+					PDF
+				</a>
 				<p
 					onClick={contactClick}
 					className={current === 1 ? "currentpage" : ""}
 				>
 					Contact
 				</p>
-				<a href={cv} download>
-					Download
-				</a>
 			</div>
 		</>
 	);

@@ -37,9 +37,10 @@ function Contact() {
 				<main className="contactMain">
 					<h1>Contact Details</h1>
 					<div className="contactDetails">
-						<p>Phone: 123-456-7890</p>
-						<p>Email: </p>
-						<p>LinkedIn: </p>
+						<p>Phone: +46 700 143776</p>
+						<p>Email: pxperrine@gmail.com</p>
+						<br />
+						<p>Stockholm, Sweden</p>
 					</div>
 
 					<div className="contactform">
