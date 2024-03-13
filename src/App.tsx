@@ -18,7 +18,8 @@ function App() {
 		<>
 			<Headbox current={current} changeCurrent={changeCurrent} />
 			<div className="contentholder">
-				{current === 0 ? <CVpage /> : <Contact />}
+				{current === 0 ? <CVpage /> : ""}
+				{current === 1 ? <Contact /> : ""}
 			</div>
 			<Footbox />
 		</>

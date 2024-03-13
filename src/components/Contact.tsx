@@ -5,7 +5,7 @@ function Contact() {
 		<>
 			<div className="contactBacking">
 				<main>
-					<div className="contact">
+					<div className="contactDetails">
 						<p>Phone: 123-456-7890</p>
 						<p>Email: </p>
 						<p>LinkedIn: </p>

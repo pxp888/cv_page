@@ -1,4 +1,5 @@
 import "./Headbox.css";
+
 interface HeadboxProps {
 	current: number;
 	changeCurrent: (newCurrent: number) => void;

@@ -11,18 +11,22 @@ main {
 
 	background-color: #d3d3d3;
 }
+.contactDetails {
+	margin: 3rem 1rem;
+}
 
 .contactform > form {
 	display: flex;
 	flex-direction: column;
-	margin: 1rem;
+	margin: 0.5rem;
 }
 
-.contactform input {
-	margin: 0.5rem;
+.contactform input,
+.contactform textarea,
+.contactform button {
+	margin: inherit;
 }
 
 .contactform textarea {
 	height: 12rem;
-	margin: 0.5rem;
 }

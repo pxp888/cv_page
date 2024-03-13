@@ -48,6 +48,15 @@ h1 {
 	display: none;
 }
 
+@media screen and (max-width: 768px) {
+	main {
+		max-width: 100%;
+		flex-grow: 1;
+		margin: 0;
+		padding: 1rem;
+	}
+}
+
 @media print {
 	:root {
 		--fsize1: 12px;
