@@ -25,20 +25,25 @@ function Contact() {
 			message: message.value,
 		};
 		sendNotification(data);
+		alert("Message sent!");
+		email.value = "";
+		name.value = "";
+		message.value = "";
 	}
 
 	return (
 		<>
-			<div className="contactBacking">
-				<main>
+			<div className="backing">
+				<main className="contactMain">
+					<h1>Contact Details</h1>
 					<div className="contactDetails">
 						<p>Phone: 123-456-7890</p>
 						<p>Email: </p>
 						<p>LinkedIn: </p>
-						<p>GitHub: </p>
 					</div>
 
 					<div className="contactform">
+						<h1>Direct Message</h1>
 						<form>
 							<input type="text" placeholder="Name" />
 							<input type="text" placeholder="Email" />
